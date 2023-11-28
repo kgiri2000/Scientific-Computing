@@ -1,0 +1,6 @@
+function [val] = fExt3D(x,y, z,fx)
+    val = 0;
+    if x^2 + y^2 + z^2 <=1
+        val= fx(x, y,z);
+    end
+end

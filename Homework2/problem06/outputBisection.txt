@@ -1,0 +1,8 @@
+//Kamal Giri
+//COSC 3340
+//Output file for Problem 06
+//Bisection Method
+
+1. Value of root x* = -0.95
+2.The value of f(x*) = 0
+3.The number of iterations performed: 1

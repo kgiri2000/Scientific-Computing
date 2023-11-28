@@ -1,0 +1,36 @@
+clear all;
+format long
+f  = @(x,y) 0.5*(exp(-x.^2) + exp(-y.^2));
+a = -1;
+b = 1;
+c= -1;
+d = 1;
+integralMC2D = 0;
+M = 10^6;
+
+%Randomizing
+x = a+ (b-a)*rand(1,M);
+y = c+ (d-a)*rand(1,M);
+
+fsum = sum(f(x,y))/M;
+
+for j = 1: 10
+    integralMC2D = integralMC2D + (b-a)*(d-c)*fsum;
+end
+
+function [val] = fExt(x,y)
+    val = 0;
+    if x^2 + y^2 <=1
+        val= f(x, y);
+    en
+end
+
+integralMC2D = integralMC2D/10
+
+
+
+
+
+
+
+

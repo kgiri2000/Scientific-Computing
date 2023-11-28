@@ -1,0 +1,12 @@
+function[gx] = internalGx(curr,xi,wi,N, f )
+Approx = 0;
+
+for k = 1:N
+    %dydx
+    a = -sqrt(1-(curr)^2);
+    b = sqrt(1-(xi(k))^2);
+
+    gx = Approx + wi(k)* f(0.5*(b-a)*xi(k) + 0.5*(b+a), curr)*0.5*(b-a);
+end
+
+

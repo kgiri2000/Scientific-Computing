@@ -1,0 +1,8 @@
+//Kamal Giri
+//COSC 3340
+//Output file for problem 7
+
+
+1. Value of root x* = -0.322185361713641
+2.The value of f(x*) = -2.346980232381668e-08
+3.The number of iterations performed: 5
